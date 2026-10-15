@@ -13,6 +13,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "icon": "./assets/icon.png"
   }
 }

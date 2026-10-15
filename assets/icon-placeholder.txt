@@ -1,0 +1,9 @@
+assets/icon.png contains a tiny placeholder PNG encoded in base64. Replace it with a proper PNG icon (recommended sizes: 512x512 PNG). To decode the base64 into a binary PNG locally:
+
+# macOS / Linux
+cat assets/icon.png | base64 --decode > assets/icon-real.png
+
+# Windows (PowerShell)
+[System.Convert]::FromBase64String((Get-Content -Raw assets\icon.png)) | Set-Content -Encoding Byte -Path assets\icon-real.png
+
+After replacing, update app.json if you change path.
